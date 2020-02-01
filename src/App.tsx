@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { Router } from '@reach/router';
+
+import MainPage from './components/MainPage';
+import Header from './components/Header';
+import Form from './components/Form';
+import BookDetails from './components/BookDetails';
+
 import './App.css';
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <>
+            <Header />
+            <Router>
+                <MainPage path="/" />
+                <Form path="/create" />
+                <BookDetails path="/detail/:id" />
+            </Router>
+        </>
+    );
+};
 
 export default App;

@@ -1,0 +1,39 @@
+.btn {
+    text-align: center;
+    background-color: #2e659c;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    filter: brightness(150%);
+    color: whitesmoke;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.red {
+    background: crimson;
+    border: 1px solid crimson;
+    color: white;
+}
+
+.turquoise {
+    background: #349ca1;
+}
+
+.btn:disabled {
+    background: #949393;
+    color: whitesmoke;
+    cursor: not-allowed;
+    border: none;
+}

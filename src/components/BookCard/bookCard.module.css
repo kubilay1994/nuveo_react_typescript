@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid silver;
+    width: 85%;
+}
+.container:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 4px silver;
+}
+
+.img {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.info small {
+    font-style: italic;
+    color: grey;
+    padding: 0.2rem;
+}
+
+.price {
+    margin: 0.2rem;
+    background: whitesmoke;
+    padding: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+    .container {
+        width: 42%;
+    }
+}

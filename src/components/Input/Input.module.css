@@ -1,0 +1,42 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 40rem;
+}
+
+.formLabel {
+    margin: 0.2rem;
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.Input {
+    border: 2px solid rgb(226, 221, 221);
+    border-radius: 10px;
+    padding: 0.5rem;
+    min-height: 1.5rem;
+    font: inherit;
+    text-indent: 4px;
+}
+
+.Input:focus {
+    outline: none;
+}
+
+.errorInput {
+    border: 1.25px solid crimson;
+}
+.error {
+    font: inherit;
+    color: crimson;
+    margin: 0.3rem;
+    text-align: center;
+}
+
+@media (min-width: 40rem) {
+    .inputContainer {
+        width: 50%;
+    }
+}

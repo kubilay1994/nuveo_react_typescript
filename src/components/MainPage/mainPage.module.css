@@ -1,0 +1,89 @@
+.searchContainer {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.searchInfo {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 80%;
+}
+
+.pageLink {
+    padding: 0.4rem 0.8rem;
+    outline: none;
+}
+
+.pageLink:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+.page {
+    border: 0.1px solid black;
+    cursor: pointer;
+    padding: 0.4rem 0;
+    margin: 0.3rem 0;
+}
+
+.active {
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+.previousPage {
+    background-color: mediumvioletred;
+    padding: 0.4rem 0.8rem;
+    color: white;
+}
+
+.previousPage:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.previousPage a {
+    outline: none;
+}
+
+.disabled a {
+    background: gray;
+}
+
+.disabled:hover {
+    cursor: default;
+}
+
+.btn {
+    width: 7rem;
+    margin: 0 1rem;
+}
+
+.input {
+    border: 2px solid rgb(226, 221, 221);
+    border-radius: 10px;
+    min-height: 1.5rem;
+    font: inherit;
+    text-indent: 4px;
+    outline: none;
+    text-indent: 1rem;
+}
+
+.input:focus {
+    background-color: whitesmoke;
+}
+
+@media (min-width: 40rem) {
+    .pagination {
+        width: initial;
+    }
+}
